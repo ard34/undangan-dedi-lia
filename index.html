@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Undangan pernikahan Dedi Irawan dan Siti Suliyah, Ahad 31 Mei 2026.">
+  <meta name="theme-color" content="#ead6a8">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://undangan-pernikahan-dedi-lia.great-site.net/">
+  <meta property="og:title" content="Undangan Pernikahan Dedi & Lia">
+  <meta property="og:description" content="Dengan memohon rahmat dan ridho Allah SWT, kami mengundang Bapak/Ibu/Saudara/i untuk hadir di acara pernikahan Dedi Irawan dan Siti Suliyah.">
+  <meta property="og:image" content="https://undangan-pernikahan-dedi-lia.great-site.net/assets/preview.jpg">
+  <meta property="og:image:secure_url" content="https://undangan-pernikahan-dedi-lia.great-site.net/assets/preview.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Sampul undangan pernikahan Dedi dan Lia">
+  <meta property="og:site_name" content="Undangan Pernikahan Dedi & Lia">
+  <link rel="image_src" href="https://undangan-pernikahan-dedi-lia.great-site.net/assets/preview.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Undangan Pernikahan Dedi & Lia">
+  <meta name="twitter:description" content="Undangan pernikahan Dedi Irawan dan Siti Suliyah, Ahad 31 Mei 2026.">
+  <meta name="twitter:image" content="https://undangan-pernikahan-dedi-lia.great-site.net/assets/preview.jpg">
+
+  <title>Undangan Pernikahan Dedi & Lia</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <audio id="weddingMusic" src="music/romantic.mp3" loop preload="none"></audio>
+
+  <section id="cover" class="cover" aria-label="Sampul undangan">
+    <div class="cover-frame">
+      <button class="btn btn--primary cover__button" type="button" onclick="bukaUndangan()">
+        <span aria-hidden="true">&#9825;</span>
+        Buka Undangan
+      </button>
+    </div>
+  </section>
+
+  <main id="invitation" class="invitation" aria-hidden="true">
+    <section id="pageMempelai" class="page page--first is-active" aria-label="Informasi mempelai">
+      <img class="dove" src="assets/merpati-transparent.png" alt="Ornamen burung merpati dan cincin" decoding="async">
+      <div class="page__content page__content--mempelai">
+        <p class="section-kicker reveal stagger">Undangan Pernikahan</p>
+        <h1 class="couple-name reveal stagger delay-1">Dedi &amp; Lia</h1>
+        <p class="date-line reveal stagger delay-2">Ahad, 31 Mei 2026</p>
+
+        <div class="mempelai-list">
+          <article class="person reveal stagger delay-3">
+            <p class="person__role">Mempelai Pria</p>
+            <h2>Dedi Irawan</h2>
+            <p>Dedi, putra ke-4 dari Bapak Asmin dan Ibu Arjanah</p>
+            <span>Kp. Gandaria</span>
+          </article>
+
+          <div class="ampersand reveal stagger delay-4">&amp;</div>
+
+          <article class="person reveal stagger delay-5">
+            <p class="person__role">Mempelai Wanita</p>
+            <h2>Siti Suliyah</h2>
+            <p>Putri ke-4 dari Bapak Akhmad dan Ibu Sona</p>
+            <span>Kp. Sasak</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="page" aria-label="Kata pembuka undangan">
+      <div class="page__content">
+        <p class="bismillah reveal stagger">Bismillahirrahmanirrahim</p>
+        <p class="stagger-text">Assalamu'alaikum Warahmatullahi Wabarakatuh</p>
+        <p class="stagger-text">Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud menyelenggarakan acara pernikahan putra-putri kami.</p>
+        <p class="stagger-text">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir serta memberikan doa restu.</p>
+      </div>
+    </section>
+
+    <section class="page" aria-label="Waktu acara">
+      <div class="page__content">
+        <p class="section-kicker reveal stagger">Rangkaian Acara</p>
+        <h2 class="page-title reveal stagger delay-1">Waktu Acara</h2>
+        <p class="date-line reveal stagger delay-2">Minggu / Ahad<br>31 Mei 2026</p>
+        <p class="hijri reveal stagger delay-3">14 Dzulhijjah 1447 H</p>
+
+        <div class="event-list">
+          <article class="event reveal stagger delay-3">
+            <p class="event__label">Akad Nikah</p>
+            <h3>09.00 WIB</h3>
+            <p>s/d selesai</p>
+          </article>
+          <article class="event reveal stagger delay-4">
+            <p class="event__label">Resepsi</p>
+            <h3>10.00 WIB</h3>
+            <p>s/d selesai</p>
+          </article>
+        </div>
+
+        <div class="countdown reveal delay-5" aria-label="Hitung mundur menuju akad nikah">
+          <div><strong id="days">00</strong><span>Hari</span></div>
+          <div><strong id="hours">00</strong><span>Jam</span></div>
+          <div><strong id="minutes">00</strong><span>Menit</span></div>
+          <div><strong id="seconds">00</strong><span>Detik</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page" aria-label="Alamat dan lokasi acara">
+      <div class="page__content page__content--location">
+        <p class="section-kicker reveal stagger">Lokasi Acara</p>
+        <h2 class="page-title reveal stagger delay-1">Kediaman Mempelai Wanita</h2>
+        <p class="address reveal stagger delay-2">Kp. Sasak, Ds. Muncung, Kec. Keronjo, Kabupaten Tangerang, Provinsi Banten</p>
+
+        <div class="button-row reveal delay-3">
+          <a class="btn btn--secondary" href="https://www.google.com/maps/place/6%C2%B003'45.6%22S+106%C2%B024'01.4%22E/@-6.0633353,106.3993858,18.18z/data=!4m4!3m3!8m2!3d-6.0626594!4d106.4003873?hl=id&entry=ttu&g_ep=EgoyMDI2MDUxNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">Buka Maps</a>
+          <button class="btn btn--ghost" type="button" onclick="copyLink()">Salin Link</button>
+        </div>
+        <p id="copyStatus" class="copy-status" role="status" aria-live="polite"></p>
+
+        <div class="map-frame reveal delay-4">
+          <iframe
+            title="Lokasi acara pernikahan Dedi dan Lia"
+            src="https://maps.google.com/maps?q=-6.0626594,106.4003873&z=17&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="page" aria-label="Ayat dan hadits pernikahan">
+      <div class="page__content scripture">
+        <span class="ornament reveal" aria-hidden="true">&#10022;</span>
+        <article class="scripture__item">
+          <h2 class="reveal stagger">Firman Allah SWT</h2>
+          <p class="scripture__ref reveal stagger delay-1">QS. Ar-Rum : 21</p>
+          <p class="scripture__text stagger-text">"Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang."</p>
+        </article>
+        <div class="divider reveal delay-2"></div>
+        <article class="scripture__item">
+          <h2 class="reveal stagger delay-2">Hadits Rasulullah SAW</h2>
+          <p class="scripture__text stagger-text">"Nikah itu sunnahku, barang siapa yang tidak menyukai sunnahku, maka ia bukan termasuk golonganku."</p>
+          <p class="scripture__ref reveal stagger delay-3">HR. Ibnu Majah</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="page page--last" aria-label="Penutup">
+      <div class="page__content closing">
+        <p class="stagger-text">Atas kehadiran dan doa restu Bapak/Ibu/Saudara/i, kami ucapkan terima kasih.</p>
+        <p class="stagger-text">Semoga Allah SWT menjadikan pernikahan ini sebagai awal kehidupan rumah tangga yang sakinah, mawaddah, warahmah.</p>
+        <p class="stagger-text">Wassalamu'alaikum Warahmatullahi Wabarakatuh</p>
+        <h2 class="reveal delay-3">Dedi &amp; Lia</h2>
+      </div>
+    </section>
+
+    <section class="page page--promo" aria-label="Promosi undangan website">
+      <div class="page__content promo">
+        <img class="promo-logo reveal stagger" src="assets/logo.png" alt="Logo jasa Riski Ardiansyah" decoding="async">
+        <p class="section-kicker reveal stagger delay-1">Jasa Digital & Kreatif</p>
+        <h2 class="page-title reveal stagger delay-2">Butuh Bantuan Desain atau Tugas Project?</h2>
+        <p class="promo-copy stagger-text">Kami menerima pembuatan website profil instansi, sekolah, desa, komunitas, undangan digital maupun print, desain grafis, pengetikan, makalah, esai, dan tugas coding dasar.</p>
+        <ul class="promo-services stagger-text" aria-label="Daftar layanan">
+          <li>Website profil</li>
+          <li>Undangan digital &amp; print</li>
+          <li>Desain grafis</li>
+          <li>Makalah, esai &amp; mengetik</li>
+          <li>Tugas coding dasar</li>
+          <li>Dan lain-lain</li>
+        </ul>
+        <div class="promo-contact reveal delay-4">
+          <p><a href="https://wa.me/6283875644210?text=Halo%20Kak%20Riski%2C%20saya%20ingin%20konsultasi%20jasa%20digital." target="_blank" rel="noopener">WA 083875644210</a></p>
+          <p>Riski Ardiansyah</p>
+        </div>
+      </div>
+    </section>
+
+    <button id="nextPageButton" class="btn btn--primary next-page" type="button" onclick="nextPage()">
+      Lanjut
+    </button>
+  </main>
+
+  <button id="musicToggle" class="music-toggle" type="button" onclick="toggleMusic()" aria-label="Putar atau hentikan musik">
+    <span id="musicIcon" aria-hidden="true">&#10074;&#10074;</span>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
