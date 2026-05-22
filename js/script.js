@@ -4,6 +4,7 @@ const WEDDING_DATE = new Date("2026-05-31T09:00:00+07:00").getTime();
 let revealObserver;
 let textObserver;
 let currentPage = 0;
+let animationTimers = [];
 
 document.addEventListener("DOMContentLoaded", () => {
   document.body.classList.add("no-scroll");
@@ -212,12 +213,19 @@ function animateActivePage() {
   const activePage = document.querySelector(".page.is-active");
   if (!activePage) return;
 
+  animationTimers.forEach((timer) => window.clearTimeout(timer));
+  animationTimers = [];
+
+  document.querySelectorAll(".page:not(.is-active) .show").forEach((item) => {
+    item.classList.remove("show");
+  });
   activePage.querySelectorAll(".show").forEach((item) => item.classList.remove("show"));
 
   const animatedItems = activePage.querySelectorAll(".reveal, .stagger-text, .stagger");
   animatedItems.forEach((item, index) => {
-    window.setTimeout(() => {
+    const timer = window.setTimeout(() => {
       item.classList.add("show");
-    }, 120 + (index * 150));
+    }, 80 + (index * 110));
+    animationTimers.push(timer);
   });
 }

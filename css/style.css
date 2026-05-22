@@ -123,7 +123,7 @@ a {
   width: min(100vw, 520px);
   aspect-ratio: 941 / 1672;
   margin-inline: auto;
-  background-image: url("../assets/background.svg");
+  background-image: url("../assets/background-light.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
@@ -131,14 +131,13 @@ a {
   overflow: hidden;
   opacity: 0;
   visibility: hidden;
-  transform: translateY(18px);
-  transition: opacity 850ms ease, visibility 850ms ease, transform 850ms ease;
+  transform: translateY(0);
+  transition: opacity 520ms ease, visibility 520ms ease;
 }
 
 .invitation.is-open {
   opacity: 1;
   visibility: visible;
-  transform: translateY(0);
 }
 
 .page {
@@ -154,14 +153,15 @@ a {
   box-shadow: none;
   opacity: 0;
   visibility: hidden;
-  transform: translateX(18px);
-  transition: opacity 520ms ease, visibility 520ms ease, transform 520ms ease;
+  pointer-events: none;
+  transition: opacity 360ms ease, visibility 360ms ease;
+  will-change: opacity;
 }
 
 .page.is-active {
   opacity: 1;
   visibility: visible;
-  transform: translateX(0);
+  pointer-events: auto;
   z-index: 2;
 }
 
@@ -549,8 +549,8 @@ a {
 .reveal,
 .stagger-text {
   opacity: 0;
-  transform: translateY(18px);
-  transition: opacity 850ms ease, transform 850ms ease;
+  transform: translateY(10px);
+  transition: opacity 520ms ease, transform 520ms ease;
 }
 
 .reveal.show,
